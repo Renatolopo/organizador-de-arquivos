@@ -13,7 +13,7 @@ imagens = ['.jpg','.jpeg','.gif','.tiff','.webp','.bmp','.png','.ico','.svg']
 zipped = ['.zip','.rar','.gz','.tar','.cab','.arj','.ace']
 
 def get_type(f):
-    return f[f.find('.'): len(f)+1]
+    return f[f.rfind('.'): ]
 
 def mv(path, f):
     # renomeia arquivo caso tenha espaço no nome
